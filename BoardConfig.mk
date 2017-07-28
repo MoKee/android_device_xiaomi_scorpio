@@ -36,31 +36,5 @@ TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/qcom/common
 
-# Recovery
-RECOVERY_VARIANT := twrp
-
-BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-
-# TWRP specific build flags
-BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_DEFAULT_BRIGHTNESS := 2047
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_EXCLUDE_SUPERSU := true
-TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_NTFS_3G := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_MAX_BRIGHTNESS := 4095
-TW_NO_USB_STORAGE := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_THEME := portrait_hdpi
-
 # inherit from the proprietary version
 -include vendor/xiaomi/scorpio/BoardConfigVendor.mk
