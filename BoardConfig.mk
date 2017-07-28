@@ -33,6 +33,9 @@ TARGET_KERNEL_CONFIG := scorpio_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/qcom/common
+
 # Recovery
 RECOVERY_VARIANT := twrp
 
