@@ -9,17 +9,6 @@ devcfg.mbn            /dev/block/bootdevice/by-name/devcfg
 keymaster.mbn            /dev/block/bootdevice/by-name/keymaster
 xbl.elf            /dev/block/bootdevice/by-name/xbl
 rpm.mbn            /dev/block/bootdevice/by-name/rpm
-cmnlib64.mbn            /dev/block/bootdevice/by-name/cmnlib64bak
-cmnlib.mbn            /dev/block/bootdevice/by-name/cmnlibbak
-hyp.mbn            /dev/block/bootdevice/by-name/hypbak
-pmic.elf            /dev/block/bootdevice/by-name/pmicbak
-tz.mbn            /dev/block/bootdevice/by-name/tzbak
-emmc_appsboot.mbn            /dev/block/bootdevice/by-name/abootbak
-lksecapp.mbn            /dev/block/bootdevice/by-name/lksecappbak
-devcfg.mbn            /dev/block/bootdevice/by-name/devcfgbak
-keymaster.mbn            /dev/block/bootdevice/by-name/keymasterbak
-xbl.elf            /dev/block/bootdevice/by-name/xblbak
-rpm.mbn            /dev/block/bootdevice/by-name/rpmbak
 splash.img            /dev/block/bootdevice/by-name/splash
 NON-HLOS.bin            /dev/block/bootdevice/by-name/modem
 logo.img            /dev/block/bootdevice/by-name/logo
