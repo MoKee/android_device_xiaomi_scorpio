@@ -49,7 +49,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8996
+TARGET_KERNEL_SOURCE := kernel/xiaomi/scorpio
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # Platform
@@ -215,25 +215,23 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-PLATFORM_PATH := device/xiaomi/scorpio
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := scorpio
 
 # Board
-TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(VENDOR_PATH)/board-info.txt
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 
 # Kernel
 TARGET_KERNEL_CONFIG := scorpio_defconfig
 
 # Properties
-TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 
 # inherit from the proprietary version
 -include vendor/xiaomi/scorpio/BoardConfigVendor.mk
