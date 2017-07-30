@@ -1,0 +1,14 @@
+[
+ {
+   "repository": "android_vendor_xiaomi_scorpio",
+   "target_path": "vendor/xiaomi/scorpio"
+ },
+ {
+   "repository": "android_device_qcom_common",
+   "target_path": "device/qcom/common"
+ },
+ {
+   "repository": "android_kernel_xiaomi_scorpio",
+   "target_path": "kernel/xiaomi/scorpio"
+ }
+]
