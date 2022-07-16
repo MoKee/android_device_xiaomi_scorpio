@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_scorpio.mk
+    $(LOCAL_DIR)/mokee_scorpio.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_scorpio-user \
-    lineage_scorpio-userdebug \
-    lineage_scorpio-eng
+    mokee_scorpio-user \
+    mokee_scorpio-userdebug \
+    mokee_scorpio-eng
